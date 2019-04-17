@@ -18,6 +18,8 @@ class Song
   end
   
   def self.new_by_name(name)
+    # initializes a song and saves it to the @@all class variable 
+    # either literally or through the class method
     song = self.new 
     song.name = name
     song
