@@ -13,8 +13,17 @@ class Song
   def self.create
     song = self.new
     #@@all << song
+    song.save
     song
   end
+  
+  # def self.create 
+  #   # initializes a song and saves it to the @@all class variable 
+  #   # either literally or through the class method
+  #   s = self.new 
+  #   s.save 
+  #   s
+  # end 
   
   def self.new_by_name(name)
     song = self.new 
